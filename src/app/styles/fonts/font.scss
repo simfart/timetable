@@ -1,0 +1,27 @@
+@font-face {
+  font-family: "Circe Rounded";
+  src: local("Circe Rounded Extra Light"), local("CirceRounded-ExtraLight"),
+    url("CirceRounded-ExtraLight.woff2") format("woff2"),
+    url("CirceRounded-ExtraLight.woff") format("woff");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Circe Rounded";
+  src: local("Circe Rounded"), local("CirceRounded-Regular"),
+    url("CirceRounded-Regular.woff2") format("woff2"),
+    url("CirceRounded-Regular.woff") format("woff");
+
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Circe Rounded Alt";
+  src: local("Circe Rounded Alt Bold"), local("CirceRounded-AltBold"),
+    url("CirceRounded-AltBold.woff2") format("woff2"),
+    url("CirceRounded-AltBold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}

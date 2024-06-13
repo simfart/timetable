@@ -1,0 +1,99 @@
+.menu {
+  min-width: 236px;
+  background-color: #eeeeff;
+  display: flex;
+  flex-direction: column;
+  border-radius: 30px;
+  margin: 24px 0 0 0;
+
+  &-logo {
+    max-width: 148px;
+    max-height: 58px;
+    align-self: center;
+    margin: 40px 0;
+  }
+
+  ul {
+    padding: 0 20px 0 0;
+    margin: 0;
+  }
+
+  li {
+    list-style: none;
+
+    a {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  &-link {
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 21px;
+    color: #434b74;
+    text-decoration: none;
+    img {
+      filter: invert(25%) sepia(30%) saturate(720%) hue-rotate(191deg)
+        brightness(103%) contrast(89%);
+      height: 24px;
+      width: 24px;
+      margin: 8px 8px 8px 44px;
+    }
+
+    &_active {
+      color: #ffffff;
+      background: #8d7fc7;
+      border-radius: 0px 30px 30px 0px;
+      img {
+        filter: invert(99%) sepia(93%) saturate(0%) hue-rotate(113deg)
+          brightness(115%) contrast(100%);
+      }
+    }
+  }
+
+  &-referal {
+    width: 196px;
+    max-height: 128px;
+    border-radius: 15px;
+    background-color: #fdfdff;
+    align-self: center;
+    position: relative;
+    overflow: hidden;
+
+    h3 {
+      font-size: 16px;
+      font-weight: normal;
+      line-height: 20px;
+      margin: 16px 0 0 16px;
+    }
+    p {
+      font-size: 10px;
+      font-weight: 200;
+      line-height: 12px;
+      margin: 4px 0 0 16px;
+      max-width: 146px;
+    }
+    button {
+      margin: 10px 0 10px 16px;
+      cursor: pointer;
+      font-size: 12px;
+      font-weight: normal;
+      line-height: 16.2px;
+      padding: 8px 16px;
+      border-radius: 15px;
+      background-color: #d8ecff;
+      border: none;
+    }
+
+    img {
+      position: absolute;
+      width: 81.54px;
+      height: 98.71px;
+      top: 60px;
+      left: 123px;
+      gap: 0px;
+      opacity: 0px;
+    }
+  }
+}

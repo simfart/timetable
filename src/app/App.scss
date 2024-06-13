@@ -1,0 +1,12 @@
+@import "./styles";
+@import url("./styles/fonts/font.scss");
+
+body {
+  background-color: #fdfdff;
+  font-family: Circe Rounded, Arial, sans-serif;
+}
+
+.app {
+  max-width: 1440px;
+  margin: 0 auto;
+}
