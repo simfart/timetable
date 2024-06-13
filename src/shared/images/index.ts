@@ -9,7 +9,11 @@ import helpIcon from './Headphones, Customer, support.svg'
 import setIcon from './settings.svg'
 import questionIcon from './question-3-circle.svg'
 import present from './present.svg'
+import logoSmallIcon from './Logomark_1_.svg'
+import leftIcon from './left.svg'
+import rightIcon from './right.svg'
+import question2Icon from './question.svg'
 
 
 
-export {present, logoIcon, homeIcon,walletIcon, calendarIcon, folderIcon, cupIcon, helpIcon, puzzleIcon, setIcon, questionIcon}
+export {leftIcon, rightIcon, question2Icon, logoSmallIcon, present, logoIcon, homeIcon,walletIcon, calendarIcon, folderIcon, cupIcon, helpIcon, puzzleIcon, setIcon, questionIcon}

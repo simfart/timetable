@@ -2,8 +2,10 @@ import { FC } from "react";
 import { Menu } from "widgets/menu";
 import { Header } from "widgets/header";
 import { cn } from "@bem-react/classname";
+import { Calendar } from "./calendar";
 
 import "./Schedule.scss";
+
 export const CnSchedule = cn("schedule");
 
 export const Schedule: FC = () => {
@@ -12,15 +14,16 @@ export const Schedule: FC = () => {
       <Menu />
       <div className={CnSchedule("container")}>
         <Header />
-        <div className={CnSchedule("banners")}>
-          <div className="baner"></div>
-          <div className="upcoming"></div>
-          <div className="homework"></div>
-          <div className="report"></div>
+        <div className={CnSchedule("textField")}>
+          <select>
+            <option selected hidden>
+              Выбрать предмет
+            </option>
+            <option>Предмет</option>
+          </select>
+          <button>Изменить расписание</button>
         </div>
-
-        <div className="balanse"></div>
-        <div className="schedules"></div>
+        <Calendar />
       </div>
     </div>
   );
