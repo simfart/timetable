@@ -13,7 +13,8 @@ import logoSmallIcon from './Logomark_1_.svg'
 import leftIcon from './left.svg'
 import rightIcon from './right.svg'
 import question2Icon from './question.svg'
+import walletIconRed from './Wallet-red.svg'
 
 
 
-export {leftIcon, rightIcon, question2Icon, logoSmallIcon, present, logoIcon, homeIcon,walletIcon, calendarIcon, folderIcon, cupIcon, helpIcon, puzzleIcon, setIcon, questionIcon}
+export {walletIconRed, leftIcon, rightIcon, question2Icon, logoSmallIcon, present, logoIcon, homeIcon,walletIcon, calendarIcon, folderIcon, cupIcon, helpIcon, puzzleIcon, setIcon, questionIcon}
