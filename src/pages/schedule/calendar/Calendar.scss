@@ -1,5 +1,12 @@
 .calendar {
   display: flex;
+  flex-direction: column;
+  padding-left: 32px;
+
+  &-header {
+    display: flex;
+    align-items: center;
+  }
 
   &-month {
     display: flex;
@@ -8,15 +15,47 @@
     font-weight: bold;
     line-height: 20px;
     color: #323854;
+    align-items: center;
 
     button {
       width: 24px;
       height: 24px;
       border: none;
       background: none;
+      cursor: pointer;
+      padding: 0;
     }
     span {
       margin: 0 16px;
+    }
+  }
+
+  &-btn__today {
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 16.2px;
+    color: #323854;
+    padding: 8px 20.5px;
+    margin: 0 16px 0 32px;
+    border: 1px solid #8d7fc7;
+    border-radius: 15px;
+    background: none;
+  }
+
+  &-btn__support {
+    padding: 0;
+    background: none;
+    border: none;
+    width: 24px;
+    height: 24px;
+  }
+
+  table {
+    table-layout: fixed;
+    width: 100%;
+
+    td {
+      height: 100px;
     }
   }
 }
