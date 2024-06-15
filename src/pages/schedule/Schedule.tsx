@@ -16,7 +16,7 @@ export const Schedule: FC = () => {
         <Header />
         <div className={CnSchedule("textField")}>
           <select>
-            <option selected hidden>
+            <option defaultValue={"Выбрать предмет"} hidden>
               Выбрать предмет
             </option>
             <option>Предмет</option>

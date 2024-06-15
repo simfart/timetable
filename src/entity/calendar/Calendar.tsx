@@ -41,10 +41,10 @@ export const Calendar: FC = () => {
       const lessons = lessonsStore[formatDate(currentDate, "dd-MM-yyyy")];
       result.push(
         <div
+          key={currentDate.getTime()}
           className={cnCalendar("date", {
             pass: !isSameMonth(currentDate, date),
           })}
-          key={currentDate.getTime()}
         >
           <span>{format(currentDate, "d")}</span>{" "}
           {lessons &&

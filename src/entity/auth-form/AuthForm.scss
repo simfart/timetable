@@ -1,0 +1,91 @@
+.authForm {
+  display: flex;
+  flex-direction: column;
+
+  h1 {
+    font-size: 40px;
+    font-weight: normal;
+    line-height: 35px;
+    margin: 32px 0 16px;
+  }
+
+  input {
+    height: 36px;
+    padding: 10px 12px;
+    border-radius: 8px;
+    border: 1px solid #ececec;
+
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 16.2px;
+    text-align: left;
+    color: #79747f;
+
+    &:nth-of-type(2) {
+      margin-top: 12px;
+    }
+  }
+
+  &-checkbox {
+    display: flex;
+    margin-top: 16px;
+    align-items: center;
+
+    input {
+      width: 16px;
+      height: 16px;
+      margin: 4px;
+    }
+
+    label {
+      //styleName: regular 12;
+
+      font-size: 12px;
+      font-weight: normal;
+      line-height: 16.2px;
+      color: #79747f;
+      margin-left: 4px;
+    }
+  }
+
+  button {
+    width: 100%;
+    padding: 12.5px 0;
+    border-radius: 30px;
+    background: #8d7fc7;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 22.5px;
+    text-align: center;
+    color: #ffffff;
+    margin-top: 32px;
+  }
+
+  &-links {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+  }
+  a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 21.6px;
+    color: #008aff;
+  }
+
+  &-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 64px;
+  }
+  p {
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 21.6px;
+    color: #323854;
+    margin: 0 0 9px 0;
+  }
+}
