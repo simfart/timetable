@@ -2,7 +2,7 @@ import { FC } from "react";
 import { Menu } from "widgets/menu";
 import { Header } from "widgets/header";
 import { cn } from "@bem-react/classname";
-import { Calendar } from "./calendar";
+import { Calendar } from "../../entity/calendar";
 
 import "./Schedule.scss";
 

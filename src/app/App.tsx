@@ -2,6 +2,7 @@ import { FC } from "react";
 import { RouterProvider } from "./providers";
 import { QueryClientProvider } from "./providers/QueryClientProvider";
 import { BrowserRouter } from "react-router-dom";
+import { ReduxToolkitProvider } from "./providers/ReduxToolkitProvider";
 
 import "./App.scss";
 
@@ -10,7 +11,9 @@ export const App: FC = () => {
     <div className="app">
       <BrowserRouter>
         <QueryClientProvider>
-          <RouterProvider />
+          <ReduxToolkitProvider>
+            <RouterProvider />
+          </ReduxToolkitProvider>
         </QueryClientProvider>
       </BrowserRouter>
     </div>

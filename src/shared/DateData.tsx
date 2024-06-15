@@ -1,250 +1,168 @@
-export const DayData = [
-  { day: 27, pass: true },
-  {
-    day: 28,
-    pass: true,
-    lessons: {
-      lesson: {
-        time: "13:00-13:45",
-        name: "Ментальная арифметика",
-        style: "borderGreen",
-      },
-      lesson2: {
-        time: "13:00-13:45",
-        name: "Ментальная арифметика",
-        style: "borderGreenViolet",
-      },
+export const lessonsStore: Record<string, Array<any>> = {
+  ["26-02-2024"]: [
+    {
+      time: "13:00-13:45",
+      name: "Ментальная арифметика",
+      style: "borderGreen",
     },
-  },
-  {
-    day: 29,
-    pass: true,
-    lessons: {
-      lesson: {
-        time: "13:00-13:45",
-        name: "Ментальная арифметика",
-        style: "borderGrey",
-      },
-      lesson2: {
-        time: "13:00-13:45",
-        name: "Ментальная арифметика",
-        style: "borderGreyViolet",
-      },
+    {
+      time: "13:00-13:45",
+      name: "Ментальная арифметика",
+      style: "borderGreenViolet",
     },
-  },
-  {
-    day: 30,
-    pass: true,
-    lessons: {
-      lesson: {
-        time: "13:00-13:45",
-        name: "Ментальная арифметика",
-        style: "borderRed",
-        pay: true,
-      },
-      lesson2: {
-        time: "13:00-13:45",
-        name: "Ментальная арифметика",
-        style: "borderRedViolet",
-        pay: true,
-      },
+  ],
+  ["27-02-2024"]: [
+    {
+      time: "13:00-13:45",
+      name: "Ментальная арифметика",
+      style: "borderGrey",
     },
-  },
-  {
-    day: 1,
-    lessons: {
-      lesson: {
-        time: "13:00-13:45",
-        name: "Ментальная арифметика",
-        style: "fillViolet",
-      },
-      lesson2: {
-        time: "13:00-13:45",
-        name: "Ментальная арифметика",
-        style: "fillGrey",
-      },
+    {
+      time: "13:00-13:45",
+      name: "Ментальная арифметика",
+      style: "borderGreyViolet",
     },
-  },
-  {
-    day: 2,
-    lessons: {
-      lesson: {
-        time: "13:00-13:45",
-        name: "Ментальная арифметика",
-        style: "fillGreen",
-        pay: true,
-      },
-      lesson2: {
-        time: "13:00-13:45",
-        name: "Ментальная арифметика",
-        style: "fillGreenBorder",
-        pay: true,
-      },
+  ],
+  ["28-02-2024"]: [
+    {
+      time: "13:00-13:45",
+      name: "Ментальная арифметика",
+      style: "borderRed",
+      pay: true,
     },
-  },
-  {
-    day: 3,
-    lessons: {
-      lesson: {
-        time: "13:00-13:45",
-        name: "Ментальная арифметика",
-        style: "fillGreen",
-      },
-      lesson2: {
-        time: "13:00-13:45",
-        name: "Ментальная арифметика",
-        style: "fillGreenBorder",
-      },
+    {
+      time: "13:00-13:45",
+      name: "Ментальная арифметика",
+      style: "borderRedViolet",
+      pay: true,
     },
-  },
-  {
-    day: 4,
-    lessons: {
-      lesson: {
-        time: "13:00-13:45",
-        name: "Ментальная арифметика",
-        style: "fillGreen",
-      },
+  ],
+  ["29-02-2024"]: [
+    {
+      time: "13:00-13:45",
+      name: "Ментальная арифметика",
+      style: "borderRed",
+      pay: true,
     },
-  },
-  {
-    day: 5,
-  },
-  {
-    day: 6,
-    lessons: {
-      lesson: {
-        time: "13:00-13:45",
-        name: "Ментальная арифметика",
-        style: "fillGreen",
-      },
+    {
+      time: "13:00-13:45",
+      name: "Ментальная арифметика",
+      style: "borderRedViolet",
+      pay: true,
     },
-  },
-  {
-    day: 7,
-  },
-  {
-    day: 8,
-    lessons: {
-      lesson: {
-        time: "13:00-13:45",
-        name: "Ментальная арифметика",
-        style: "fillGreen",
-      },
+  ],
+  ["01-03-2024"]: [
+    {
+      time: "13:00-13:45",
+      name: "Ментальная арифметика",
+      style: "fillViolet",
     },
-  },
-  {
-    day: 9,
-  },
-  {
-    day: 10,
-  },
-  {
-    day: 11,
-  },
-  {
-    day: 12,
-  },
-  {
-    day: 13,
-  },
-  {
-    day: 14,
-    lessons: {
-      lesson: {
-        time: "13:00-13:45",
-        name: "Ментальная арифметика",
-        style: "fillGreen",
-      },
+    {
+      time: "13:00-13:45",
+      name: "Ментальная арифметика",
+      style: "fillGrey",
     },
-  },
-  {
-    day: 15,
-  },
-  {
-    day: 16,
-    lessons: {
-      lesson: {
-        time: "13:00-13:45",
-        name: "Ментальная арифметика",
-        style: "fillGreen",
-      },
+  ],
+  ["02-03-2024"]: [
+    {
+      time: "13:00-13:45",
+      name: "Ментальная арифметика",
+      style: "fillGreen",
+      pay: true,
     },
-  },
-  {
-    day: 17,
-  },
-  {
-    day: 18,
-    lessons: {
-      lesson: {
-        time: "13:00-13:45",
-        name: "Ментальная арифметика",
-        style: "fillGreen",
-      },
-      lesson2: {
-        time: "13:00-13:45",
-        name: "Ментальная арифметика",
-        style: "fillGreen",
-      },
+    {
+      time: "13:00-13:45",
+      name: "Ментальная арифметика",
+      style: "fillGreenBorder",
+      pay: true,
     },
-  },
-  {
-    day: 19,
-  },
-  {
-    day: 20,
-  },
-  {
-    day: 21,
-  },
-  {
-    day: 22,
-  },
-  {
-    day: 23,
-    lessons: {
-      lesson: {
-        time: "13:00-13:45",
-        name: "Ментальная арифметика",
-        style: "fillGreen",
-      },
+  ],
+  ["03-03-2024"]: [
+    {
+      time: "13:00-13:45",
+      name: "Ментальная арифметика",
+      style: "fillGreen",
     },
-  },
-  {
-    day: 24,
-  },
-  {
-    day: 25,
-  },
-  {
-    day: 26,
-  },
-  {
-    day: 27,
-  },
-  {
-    day: 28,
-  },
-  {
-    day: 29,
-  },
-  {
-    day: 30,
-  },
-  {
-    day: 31,
-    lessons: {
-      lesson: {
-        time: "13:00-13:45",
-        name: "Ментальная арифметика",
-        style: "fillGreen",
-      },
-      lesson2: {
-        time: "13:00-13:45",
-        name: "Ментальная арифметика",
-        style: "fillGreen",
-      },
+    {
+      time: "13:00-13:45",
+      name: "Ментальная арифметика",
+      style: "fillGreenBorder",
     },
-  },
-];
+  ],
+  ["04-03-2024"]: [
+    {
+      time: "13:00-13:45",
+      name: "Ментальная арифметика",
+      style: "fillGreen",
+      pay: true,
+    },
+  ],
+  ["06-03-2024"]: [
+    {
+      time: "13:00-13:45",
+      name: "Ментальная арифметика",
+      style: "fillGreen",
+      pay: true,
+    },
+  ],
+  ["08-03-2024"]: [
+    {
+      time: "13:00-13:45",
+      name: "Ментальная арифметика",
+      style: "fillGreen",
+      pay: true,
+    },
+  ],
+  ["14-03-2024"]: [
+    {
+      time: "13:00-13:45",
+      name: "Ментальная арифметика",
+      style: "fillGreen",
+      pay: true,
+    },
+  ],
+  ["16-03-2024"]: [
+    {
+      time: "13:00-13:45",
+      name: "Ментальная арифметика",
+      style: "fillGreen",
+      pay: true,
+    },
+  ],
+  ["18-03-2024"]: [
+    {
+      time: "13:00-13:45",
+      name: "Ментальная арифметика",
+      style: "fillGreen",
+      pay: true,
+    },
+    {
+      time: "13:00-13:45",
+      name: "Ментальная арифметика",
+      style: "fillGreen",
+      pay: true,
+    },
+  ],
+  ["23-03-2024"]: [
+    {
+      time: "13:00-13:45",
+      name: "Ментальная арифметика",
+      style: "fillGreen",
+      pay: true,
+    },
+  ],
+  ["31-03-2024"]: [
+    {
+      time: "13:00-13:45",
+      name: "Ментальная арифметика",
+      style: "fillGreen",
+      pay: true,
+    },
+    {
+      time: "13:00-13:45",
+      name: "Ментальная арифметика",
+      style: "fillGreen",
+      pay: true,
+    },
+  ],
+};
