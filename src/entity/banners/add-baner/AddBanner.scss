@@ -1,0 +1,34 @@
+.baner {
+  grid-row: 1 / span 2;
+  background-color: #7362bc;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  padding: 56px 0 56px 40px;
+  justify-content: space-between;
+  position: relative;
+  overflow: hidden;
+  h2 {
+    font-size: 32px;
+    font-weight: normal;
+    line-height: 32px;
+    color: #ffffff;
+    margin: 0;
+    width: 366px;
+  }
+  p {
+    font-weight: 200;
+    line-height: 20px;
+    color: #ffffff;
+    margin: 0;
+    width: 300px;
+  }
+
+  img {
+    position: absolute;
+    max-width: 261px;
+    max-height: 248px;
+    left: 334px;
+    top: 0;
+  }
+}

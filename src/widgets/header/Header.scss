@@ -6,9 +6,15 @@
     0px 15px 9px 0px #8f8fb70a, 0px 27px 11px 0px #8f8fb703,
     0px 42px 12px 0px #8f8fb700;
   display: flex;
-  justify-content: space-between;
+  justify-content: end;
   align-items: center;
   width: 100%;
+
+  &_style {
+    &_home {
+      justify-content: space-between;
+    }
+  }
 
   h1 {
     font-size: 24px;
@@ -27,6 +33,7 @@
     align-content: center;
     justify-items: center;
     padding: 12px 50px 12px 0;
+    justify-self: end;
   }
   &-chat {
     background: none;
@@ -54,13 +61,15 @@
     height: 16px;
   }
   &-dropdown {
+    position: relative;
+  }
+  &-dropdownButton {
     border: none;
     background: none;
     padding: 0;
     display: flex;
     align-items: center;
     cursor: pointer;
-    position: relative;
   }
 
   &-menu {

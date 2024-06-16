@@ -1,35 +1,43 @@
-import { FC, useState } from "react";
+import { useState } from "react";
 import { cn } from "@bem-react/classname";
-import { ChangeUserPopup } from "widgets/changeUser";
-// import { chatIcon, passIcon } from "shared/images";
-import {
-  chatIcon,
-  avatar2Icon,
-  avatarIcon,
-  menuIcon,
-  notificatonIcon,
-} from "shared/images";
+import { Popup } from "widgets/popup";
+import { chatIcon, avatarIcon, menuIcon, notificatonIcon } from "shared/images";
 
 import "./Header.scss";
+import { useNavigate } from "react-router-dom";
+import { useAuth } from "shared/hooks/useAuth";
 
 export const CnHeader = cn("header");
+interface HeaderProps {
+  page?: string;
+}
 
-export const Header: FC = () => {
+export const Header = ({ page }: HeaderProps) => {
   const [isModalOpen, setModalOpen] = useState(false);
 
-  const openModal = () => {
+  const openPopup = () => {
     setModalOpen(true);
   };
 
-  const closeModal = () => {
+  const closePopup = () => {
     setModalOpen(false);
   };
 
+  const { logout } = useAuth();
+
+  const navigate = useNavigate();
+  const onLogout = () => {
+    logout();
+    navigate("/login");
+  };
+
   return (
-    <div className={CnHeader()}>
-      <h1>
-        Добро пожаловать, <mark>Михаил</mark>!
-      </h1>
+    <div className={page === "home" ? CnHeader({ style: "home" }) : CnHeader()}>
+      {page === "home" && (
+        <h1>
+          Добро пожаловать, <mark>Михаил</mark>!
+        </h1>
+      )}
       <div className={CnHeader("buttons")}>
         <button className={CnHeader("chat")}>
           {" "}
@@ -40,13 +48,22 @@ export const Header: FC = () => {
             alt="notificaton Icon"
           />
         </button>
-        <button className={CnHeader("dropdown")} onClick={openModal}>
-          <img src={avatarIcon} alt="avatar Icon" />
-          <img className={CnHeader("menu")} src={menuIcon} alt="avatar Icon" />
-        </button>
-        <ChangeUserPopup isOpen={isModalOpen} onClose={closeModal} />
+        <div className={CnHeader("dropdown")}>
+          <button className={CnHeader("dropdownButton")} onClick={openPopup}>
+            <img src={avatarIcon} alt="avatar Icon" />
+            <img
+              className={CnHeader("menu")}
+              src={menuIcon}
+              alt="avatar Icon"
+            />
+          </button>
+          <Popup
+            isOpen={isModalOpen}
+            onClose={closePopup}
+            onLogout={onLogout}
+          />
+        </div>
       </div>
-      
     </div>
   );
 };

@@ -165,4 +165,170 @@ export const lessonsStore: Record<string, Array<any>> = {
       pay: true,
     },
   ],
+  ["28-05-2024"]: [
+    {
+      time: "13:00-13:45",
+      name: "Ментальная арифметика",
+      style: "borderGreen",
+    },
+    {
+      time: "13:00-13:45",
+      name: "Ментальная арифметика",
+      style: "borderGreenViolet",
+    },
+  ],
+  ["29-05-2024"]: [
+    {
+      time: "13:00-13:45",
+      name: "Ментальная арифметика",
+      style: "borderGrey",
+    },
+    {
+      time: "13:00-13:45",
+      name: "Ментальная арифметика",
+      style: "borderGreyViolet",
+    },
+  ],
+  ["30-05-2024"]: [
+    {
+      time: "13:00-13:45",
+      name: "Ментальная арифметика",
+      style: "borderRed",
+      pay: true,
+    },
+    {
+      time: "13:00-13:45",
+      name: "Ментальная арифметика",
+      style: "borderRedViolet",
+      pay: true,
+    },
+  ],
+  ["31-05-2024"]: [
+    {
+      time: "13:00-13:45",
+      name: "Ментальная арифметика",
+      style: "borderRed",
+      pay: true,
+    },
+    {
+      time: "13:00-13:45",
+      name: "Ментальная арифметика",
+      style: "borderRedViolet",
+      pay: true,
+    },
+  ],
+  ["01-06-2024"]: [
+    {
+      time: "13:00-13:45",
+      name: "Ментальная арифметика",
+      style: "fillViolet",
+    },
+    {
+      time: "13:00-13:45",
+      name: "Ментальная арифметика",
+      style: "fillGrey",
+    },
+  ],
+  ["02-06-2024"]: [
+    {
+      time: "13:00-13:45",
+      name: "Ментальная арифметика",
+      style: "fillGreen",
+      pay: true,
+    },
+    {
+      time: "13:00-13:45",
+      name: "Ментальная арифметика",
+      style: "fillGreenBorder",
+      pay: true,
+    },
+  ],
+  ["03-06-2024"]: [
+    {
+      time: "13:00-13:45",
+      name: "Ментальная арифметика",
+      style: "fillGreen",
+    },
+    {
+      time: "13:00-13:45",
+      name: "Ментальная арифметика",
+      style: "fillGreenBorder",
+    },
+  ],
+  ["04-06-2024"]: [
+    {
+      time: "13:00-13:45",
+      name: "Ментальная арифметика",
+      style: "fillGreen",
+      pay: true,
+    },
+  ],
+  ["06-06-2024"]: [
+    {
+      time: "13:00-13:45",
+      name: "Ментальная арифметика",
+      style: "fillGreen",
+      pay: true,
+    },
+  ],
+  ["08-06-2024"]: [
+    {
+      time: "13:00-13:45",
+      name: "Ментальная арифметика",
+      style: "fillGreen",
+      pay: true,
+    },
+  ],
+  ["14-06-2024"]: [
+    {
+      time: "13:00-13:45",
+      name: "Ментальная арифметика",
+      style: "fillGreen",
+      pay: true,
+    },
+  ],
+  ["16-06-2024"]: [
+    {
+      time: "13:00-13:45",
+      name: "Ментальная арифметика",
+      style: "fillGreen",
+      pay: true,
+    },
+  ],
+  ["18-06-2024"]: [
+    {
+      time: "13:00-13:45",
+      name: "Ментальная арифметика",
+      style: "fillGreen",
+      pay: true,
+    },
+    {
+      time: "13:00-13:45",
+      name: "Ментальная арифметика",
+      style: "fillGreen",
+      pay: true,
+    },
+  ],
+  ["23-06-2024"]: [
+    {
+      time: "13:00-13:45",
+      name: "Ментальная арифметика",
+      style: "fillGreen",
+      pay: true,
+    },
+  ],
+  ["30-06-2024"]: [
+    {
+      time: "13:00-13:45",
+      name: "Ментальная арифметика",
+      style: "fillGreen",
+      pay: true,
+    },
+    {
+      time: "13:00-13:45",
+      name: "Ментальная арифметика",
+      style: "fillGreen",
+      pay: true,
+    },
+  ],
 };

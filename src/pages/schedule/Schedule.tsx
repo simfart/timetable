@@ -6,7 +6,7 @@ import { Calendar } from "../../entity/calendar";
 
 import "./Schedule.scss";
 
-export const CnSchedule = cn("schedule");
+const CnSchedule = cn("schedule");
 
 export const Schedule: FC = () => {
   return (

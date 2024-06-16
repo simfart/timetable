@@ -4,6 +4,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { useAuth } from "shared/hooks/useAuth";
 
 import "./AuthForm.scss";
+
 const CnForm = cn("authForm");
 
 interface AuthFormProps {

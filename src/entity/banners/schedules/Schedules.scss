@@ -1,0 +1,126 @@
+.schedules {
+  border-radius: 30px;
+  border: 1px solid #7362bc;
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  color: #323854;
+
+  h3 {
+    font-size: 24px;
+    font-weight: normal;
+    line-height: 24px;
+    margin: 0;
+  }
+
+  &-cards {
+    margin: 16px 0 36px;
+  }
+
+  &-card {
+    display: flex;
+    align-items: center;
+    padding: 7px 40px 5px 0;
+
+    position: relative;
+  }
+
+  &-date {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 42px;
+
+    p {
+      font-size: 32px;
+      font-weight: normal;
+      line-height: 32px;
+      margin: 0;
+    }
+    span {
+      font-size: 12px;
+      font-weight: normal;
+      line-height: 16.2px;
+    }
+  }
+
+  &-title {
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 21.6px;
+    margin: 0 0 0 16px;
+    width: 180px;
+  }
+
+  &-timeTeacher {
+    margin-left: 24px;
+    display: flex;
+    align-items: center;
+    p {
+      font-size: 12px;
+      font-weight: normal;
+      line-height: 16.2px;
+      width: 70px;
+      margin-right: 6px;
+    }
+  }
+
+  &-teacher {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 200;
+  }
+
+  img {
+    height: 16px;
+    width: 16px;
+    margin-right: 2px;
+  }
+
+  &-buttons {
+    position: absolute;
+    right: 40px;
+  }
+
+  &-button {
+    border-radius: 15px;
+    border: none;
+    background: #8d7fc7;
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 16.2px;
+    text-align: center;
+    padding: 8px 10px;
+    color: #ffffff;
+    margin-left: 4px;
+    cursor: pointer;
+
+    &_style {
+      &_greyBorer {
+        background: none;
+        border: 1px solid #eeeeff;
+        color: #323854;
+      }
+    }
+  }
+
+  &-line {
+    border-bottom: 1px solid #eeeeff;
+    margin: 4px 0;
+  }
+
+  &-bigButton {
+    width: 344px;
+    height: 40px;
+    padding: 10px 40px;
+    border-radius: 30px;
+    background: #decfff;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 21.6px;
+    border: none;
+    align-self: center;
+    cursor: pointer;
+  }
+}

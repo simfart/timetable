@@ -1,0 +1,25 @@
+.home {
+  display: flex;
+
+  &-container {
+    max-width: 1154px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  &-banners {
+    display: grid;
+    grid-template-columns: 526px 344px 162px;
+    grid-template-rows: repeat(2, 114px);
+    gap: 20px;
+    margin: 20px 0 20px 32px;
+  }
+  &-numbers {
+    display: grid;
+    grid-template-columns: 344px 708px;
+    grid-template-rows: 372px;
+    gap: 20px;
+    margin: 0 0 0 32px;
+  }
+}

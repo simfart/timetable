@@ -8,15 +8,16 @@ import {
   upIcon,
 } from "shared/images";
 
-import "./ChangeUserPopup.scss";
+import "./Popup.scss";
 
 const CnPopup = cn("popup");
 interface ModalProps {
   isOpen: boolean;
   onClose: () => void;
+  onLogout: () => void;
 }
 
-export const ChangeUserPopup: FC<ModalProps> = ({ isOpen, onClose }) => {
+export const Popup: FC<ModalProps> = ({ isOpen, onClose, onLogout }) => {
   if (!isOpen) {
     return null;
   }
@@ -40,7 +41,7 @@ export const ChangeUserPopup: FC<ModalProps> = ({ isOpen, onClose }) => {
         </div>
       </div>
       <div className={CnPopup("line")}></div>
-      <button className={CnPopup("exit")} onClick={onClose}>
+      <button className={CnPopup("exit")} onClick={onLogout}>
         <span>Выход</span>
         <img src={exitIcon} alt="exit" />
       </button>
@@ -48,7 +49,7 @@ export const ChangeUserPopup: FC<ModalProps> = ({ isOpen, onClose }) => {
         <img src={closeIcon} alt="close Icon" />
       </button>
 
-      <img  className={CnPopup("upElement")} src={upIcon} alt="up Icon" />
+      <img className={CnPopup("upElement")} src={upIcon} alt="up Icon" />
     </div>
   );
 };

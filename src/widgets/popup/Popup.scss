@@ -3,11 +3,13 @@
   flex-direction: column;
   padding: 30px;
   position: absolute;
-  top: 68px;
+  top: 55px;
   right: 0;
   background: #ffffff;
   border: 1px solid #7362bc;
   border-radius: 12px;
+  width: 250px;
+  z-index: 10;
 
   h2 {
     font-size: 16px;
@@ -80,11 +82,15 @@
     right: 12px;
     width: 24px;
     height: 24px;
+    border: none;
+    background: none;
+    padding: 0;
+    cursor: pointer;
   }
   &-upElement {
     position: absolute;
-    top: 0px;
-    right: 35px;
+    top: -12px;
+    right: 31px;
     width: 16px;
     height: 12px;
   }

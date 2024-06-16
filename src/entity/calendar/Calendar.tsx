@@ -24,7 +24,7 @@ import {
 } from "date-fns";
 import { changeDate } from "./model";
 
-export const cnCalendar = cn("calendar");
+const cnCalendar = cn("calendar");
 
 export const Calendar: FC = () => {
   const date = useSelector((state: RootState) => state.calendar.date);

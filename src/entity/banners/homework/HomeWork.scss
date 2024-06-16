@@ -1,0 +1,33 @@
+.homework {
+  background-color: #d8ecff;
+  border-radius: 20px;
+  padding: 16px 12px 12px 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+
+  p {
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 20px;
+    margin: 0;
+  }
+
+  &-icon {
+    width: 40px;
+    height: 40px;
+    width: 40px;
+    border-radius: 12px;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: flex-end;
+  }
+
+  img {
+    width: 24px;
+    height: 24px;
+  }
+}

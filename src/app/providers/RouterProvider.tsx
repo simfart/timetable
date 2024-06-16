@@ -1,6 +1,6 @@
 import { FC } from "react";
 import { Route, Routes } from "react-router-dom";
-import { Main } from "pages/main";
+import { Home } from "pages/home";
 import { EntryPage } from "pages/auth";
 import { Schedule } from "pages/schedule";
 import { PageNotFound } from "pages/page-not-found";
@@ -9,15 +9,14 @@ import { ProtectedRoute } from "./ProtectedRoute";
 export const RouterProvider: FC = () => {
   return (
     <Routes>
-      <Route path="/" element={<Main />} />
-      {/* <Route
+      <Route
         path="/"
         element={
           <ProtectedRoute>
-            <Main />
+            <Home />
           </ProtectedRoute>
         }
-      /> */}
+      />
       <Route path="/login" element={<EntryPage />} />
       <Route
         path="/schedule"
