@@ -9,14 +9,15 @@ import { ProtectedRoute } from "./ProtectedRoute";
 export const RouterProvider: FC = () => {
   return (
     <Routes>
-      <Route
+      <Route path="/" element={<Main />} />
+      {/* <Route
         path="/"
         element={
           <ProtectedRoute>
             <Main />
           </ProtectedRoute>
         }
-      />
+      /> */}
       <Route path="/login" element={<EntryPage />} />
       <Route
         path="/schedule"

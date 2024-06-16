@@ -1,0 +1,91 @@
+.popup {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  position: absolute;
+  top: 68px;
+  right: 0;
+  background: #ffffff;
+  border: 1px solid #7362bc;
+  border-radius: 12px;
+
+  h2 {
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 21.6px;
+    color: #323854;
+    margin: 0 0 12px 0;
+  }
+
+  &-item {
+    display: flex;
+    padding: 8px;
+    border-radius: 12px;
+
+    &_current {
+      background: #eeeeff;
+      margin-bottom: 8px;
+    }
+    img {
+      width: 32px;
+      height: 32px;
+    }
+  }
+
+  &-name {
+    display: flex;
+    flex-direction: column;
+    color: #323854;
+    justify-items: center;
+    justify-content: center;
+    margin-left: 8px;
+
+    p {
+      font-size: 12px;
+      font-weight: normal;
+      line-height: 16.2px;
+      margin: 0 2px 0 0;
+    }
+    span {
+      font-size: 10px;
+      font-weight: 200;
+      line-height: 12px;
+    }
+  }
+
+  &-line {
+    border-bottom: 1px solid #eeeeff;
+    margin: 12px 0;
+  }
+
+  &-exit {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: none;
+    border: none;
+    cursor: pointer;
+    span {
+      font-size: 16px;
+      font-weight: normal;
+      line-height: 21.6px;
+      margin: 9px 0;
+      color: #008aff;
+    }
+  }
+
+  &-close {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    width: 24px;
+    height: 24px;
+  }
+  &-upElement {
+    position: absolute;
+    top: 0px;
+    right: 35px;
+    width: 16px;
+    height: 12px;
+  }
+}

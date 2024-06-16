@@ -16,10 +16,18 @@ import question2Icon from "./question.svg";
 import walletIconRed from "./Wallet-red.svg";
 import avatarIcon from "./avatar.svg";
 import avatar2Icon from "./avatar (1).svg";
-import menuIcon from "./Arrow.svg";
-import chatIcon from "./chat icon.svg";
+import menuIcon from "./Path.svg";
+import chatIcon from "./Messages, Chat.svg";
+import notificatonIcon from "./notification number.svg";
+import exitIcon from "./exit.svg";
+import closeIcon from "./Delete, Disabled.svg";
+import upIcon from "./Polygon 2.svg";
 
 export {
+  closeIcon,
+  upIcon,
+  exitIcon,
+  notificatonIcon,
   chatIcon,
   avatar2Icon,
   avatarIcon,

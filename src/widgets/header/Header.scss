@@ -8,6 +8,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
 
   h1 {
     font-size: 24px;
@@ -21,30 +22,52 @@
       background-color: transparent;
     }
   }
-
-  button {
-    margin: 12px 0 12px 16px;
+  &-buttons {
+    display: flex;
+    align-content: center;
+    justify-items: center;
+    padding: 12px 50px 12px 0;
+  }
+  &-chat {
+    background: none;
     width: 42px;
     height: 42px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    border: 1px solid #7362bc;
+    position: relative;
     padding: 0;
-    background: none;
-    border: none;
-    &:last-of-type {
-      margin-left: 0;
-    }
+    margin-right: 16px;
+    cursor: pointer;
   }
 
-  img {
-    width: 42px;
-    height: 42px;
-    &:last-of-type {
-      width: 24px;
-      height: 24px;
-    }
+  &-icon {
+    width: 24px;
+    height: 24px;
+  }
+
+  &-notification {
+    position: absolute;
+    top: -3px;
+    right: -3px;
+    width: 16px;
+    height: 16px;
+  }
+  &-dropdown {
+    border: none;
+    background: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
   }
 
   &-menu {
-    width: 24px;
-    height: 24px;
+    margin-left: 8px;
+    align-self: center;
+    justify-self: start;
+    width: 8px;
+    height: 4px;
   }
 }

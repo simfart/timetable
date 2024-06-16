@@ -10,6 +10,8 @@ import "./App.scss";
 
 export const App: FC = () => {
   const [user, setUser] = useState<UserType | null>(null);
+  console.log(user);
+
   return (
     <div className="app">
       <BrowserRouter>
